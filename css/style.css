@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #10454F;
+    color: #A3AB78;
+}
+
+/* chama as tags */
+#novoPersonagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap ;
+}
+
+/* chama as classes */
+.card{
+    background-color: #506266;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 15px;
+    border: 5px solid #506266;
+    cursor: pointer;
+    margin: 35px;
+    transition: transform 0.2s ease; /* Transição suave */
+}
+
+.card img{
+    background-color: #A3AB78;
+    border-radius: 15px;
+}
+
+.card:hover{
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+.card:hover {
+    transform: scale(1.1); /*aumenta quando o mouse passa em cima */
+}
+
+#imput_formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#imput_formulario input{
+    width: 120px;
+    border-radius: 7px;
+    border: 4px solid #506266;
+    margin: 15px;
+    text-align: center;
+    height: 50px;
+    cursor: pointer;
+}
+
+.heroi{
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.button{
+    position:relative;
+    display:inline-block;
+    margin:20px;
+  }
+  
+  .button {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #A3AB78;
+    display: block;
+    position: relative;
+    padding: 20px 40px;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+    -webkit-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #506266;
+    -moz-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #506266;
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #506266;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.button:active {
+    top: 10px; /* Simula um efeito de pressionar */
+    background-color: #A3AB78;
+
+    -webkit-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #506266;
+    -moz-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #506266;
+    box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #506266;
+}
+
+.button::after {
+    content: "";
+    height: calc(100% + 15px); /* Ajuste a altura para cobrir o botão */
+    width: calc(100% + 8px); /* Ajuste a largura para cobrir o botão */
+    padding: 4px;
+    position: absolute;
+    bottom: -15px;
+    left: -4px;
+    z-index: -1;
+    background-color: #2B1800;
+    border-radius: 5px; /* Bordas arredondadas */
+}
